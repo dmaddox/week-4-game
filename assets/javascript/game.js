@@ -71,6 +71,7 @@ function scoreCheck() {
 	if (score == goal) {
 		wins++;
 		$("#wins").text(wins);
+
 		reset();
 	} else if (score > goal) {
 		losses++;

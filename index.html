@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
 	<style type="text/css">
 		body {
 			padding: 25px;
@@ -15,15 +18,27 @@
 	</style>
 </head>
 <body>
-	<h1>Your Target: <span id="goal"></span></h1>
-	<h2>Your score: <span id="score"></span></h2>
-	<button id="emerald">Emerald</button>
-	<button id="sapphire">Sapphire</button>
-	<button id="moonstone">Moonstone</button>
-	<button id="opal">Opal</button>
-	<h3>Wins: <span id="wins"></span></h3>
-	<h3>Losses: <span id="losses"></span></h3>
-	
+	<div id="wrapper">
+		<h1>Can you collect exactly <span id="goal"></span> gems?</h1>
+		<h3>Game Instructions:</h3>
+		<ol>
+			<li class="directions">Click on each of the gem images below and see your collection grow.</li>
+			<li class="directions">Use subtraction to figure out how many points you collect from each gem!</li>
+			<li class="directions">Match the score above to win! If your collections goes over the target score, you lose.</li>
+			<li class="directions">During each game, the gems will reset to give different amounts when clicked.</li> 
+		</ol>
+		<div id="gems">
+			<img src ="assets/images/emerald.png" id="emerald" />
+			<img src ="assets/images/diamond.jpg" id="sapphire" />
+			<img src ="assets/images/moonstone.jpg" id="moonstone" />
+			<img src ="assets/images/ruby.jpg" id="opal" />
+		</div>
+		<h2>Gems collected: <span id="score">0</span></h2>
+		<div id="scoreboard">
+			<h3 class="left">Wins: <span id="wins"></span></h3>
+			<h3 class="right">Losses: <span id="losses"></span></h3>
+		</div>
+	</div>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

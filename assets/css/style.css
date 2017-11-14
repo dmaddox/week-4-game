@@ -1,0 +1,56 @@
+body {
+	background-color: #fff;
+	width: 100%;
+}
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 25px;
+}
+#gems {
+	text-align: center;
+	padding: 25px;
+}
+img {
+	cursor: pointer;
+	text-align: center;
+	opacity: 1;
+}
+img:hover {
+	opacity: .9;
+}
+img:active {
+	opacity: 1;
+}
+h1, h2 {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+h1 {
+	font-size: 36px;
+	padding: 15px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 32px;
+	font-family: 'Lato', sans-serif;
+}
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	line-height: 26px;
+	font-family: 'Lato', sans-serif;
+}
+.bgflash {
+	background-color: pink;
+}
